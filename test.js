@@ -46,7 +46,7 @@ console.log(Hyun, console);
 
 // console.log(greetHyun);
 
-const calculator = {
+/*const calculator = {
   plus: function(a, b) {
     return a + b;
   },
@@ -73,3 +73,4 @@ const power = calculator.power(5, 5);
 console.log(
   `plus:${plus}, minus:${minus}, multiply:${multiply}, devide:${devide}, power:${power}`
 );
+*/
