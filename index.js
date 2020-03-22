@@ -1,7 +1,7 @@
-const title = document.querySelector("#title");
-
-function handleClick() {
-  title.style.color = "blue";
+if ("10" === 10) {
+  console.log("hi");
+} else if ("10" === "10") {
+  console.log("lalala");
+} else {
+  console.log("ho");
 }
-
-title.addEventListener("click", handleClick);
