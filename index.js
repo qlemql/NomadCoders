@@ -1,3 +1,5 @@
-console.error("사스");
-console.error("진형");
-console.error("던");
+const title = document.querySelector("#title");
+title.innerHTML = "Hi From JS";
+title.style.color = "red";
+console.dir(document);
+document.title = "I own you now";
