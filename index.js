@@ -1,5 +1,9 @@
-if (20 > 5 || "Hyun" === "Hyun") {
-  console.log("yes");
+const age = prompt("How old are you");
+
+if (age > 18 && age <= 21) {
+  console.log("you can drink but you should not");
+} else if (age > 21) {
+  console.log("go ahead");
 } else {
-  console.log("no");
+  console.log("too young");
 }
