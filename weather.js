@@ -10,7 +10,7 @@ function handleGeoSucces(position) {
   const longitude = position.coords.longitude;
   const coordsObj = {
     latituede,
-    longitude
+    longitude,
   };
   saveCoords(coordsObj);
 }
@@ -24,8 +24,8 @@ function askForCoords() {
 }
 
 function loadCoords() {
-  const loadCoords = localStorage.getItem(COORDS);
-  if (loadCoords === null) {
+  const loadedCoords = localStorage.getItem(COORDS);
+  if (loadedCoords === null) {
     askForCoords();
   } else {
     // getWeather
