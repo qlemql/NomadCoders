@@ -1,13 +1,9 @@
-body {
-  background-color: peru;
-}
-
 .btn {
   cursor: pointer;
 }
 
 body {
-  color: #ffffff;
+  color: white;
 }
 
 .clicked {
@@ -21,9 +17,13 @@ body {
 .js-clock,
 .js-form,
 .js-greetings,
-.js-toDoForm,
+.js-toDoForm {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .js-weather {
-  margin-top: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
