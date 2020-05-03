@@ -14,13 +14,39 @@ body {
   color: #ffeaa7;
 }
 
+.js-clock {
+  font-size: 30px;
+}
+
+.js-clock,
+.js-form,
+.js-greetings,
+.js-toDoForm,
+.js-weather {
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.js-toDoList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .form,
 .greetings {
   display: none;
 }
 
+input::placeholder {
+  color: white;
+  font-size: 30px;
+}
+
 .showing {
-  display: block;
+  display: flex;
 }
 
 @keyframes fadeIn {

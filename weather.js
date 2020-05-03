@@ -14,7 +14,7 @@ function getWeather(lat, lng) {
       const temperature = json.main.temp;
       const place = json.name;
       weather.innerText = `${temperature} @ ${place}`;
-    }); //then은 데이터가 완전히 들어온 다음에 함수를 호출
+    });
 }
 
 function saveCoords(coordsObj) {
