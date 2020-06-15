@@ -1,7 +1,8 @@
 import express from "express";
 
-export const userRouter = express.Router();
+const userRouter = express.Router();
 
-userRouter.get("/", (req, res) => res.send("user index"));
-userRouter.get("/edit", (req, res) => res.send("user edit"));
-userRouter.get("/password", (req, res) => res.send("user password"));
+export default videoRouter;
+// userRouter.get("/", (req, res) => res.send("user index")); 예시
+// userRouter.get("/edit", (req, res) => res.send("user edit")); 예시
+// userRouter.get("/password", (req, res) => res.send("user password")); 예시
