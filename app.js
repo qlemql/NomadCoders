@@ -7,6 +7,7 @@ import bodyParser, { urlencoded } from "body-parser";
 import userRouter from "./routers/userRouter";
 import videoRouter from "./routers/videoRouter";
 import globalRouter from "./routers/globalRouter";
+import routes from "./routes";
 
 const app = express();
 
@@ -39,8 +40,8 @@ app.use(morgan("dev"));
 
 // app.get("/profile", handleProfile); 허용할 수 없음
 
-app.use("/", globalRouter);
-app.use("/users", userRouter);
-app.use("/videos", videoRouter);
+app.use(routes.home, globalRouter);
+app.use(routes.users, userRouter);
+app.use(routes.videos, videoRouter);
 
 export default app;
