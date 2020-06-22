@@ -1,13 +1,13 @@
-import "core-js";
 import express from "express";
 import morgan from "morgan";
 import helmet from "helmet";
 import cookieParser from "cookie-parser";
 import bodyParser, { urlencoded } from "body-parser";
+import { localsMiddleware } from "./middlewares";
+import routes from "./routes";
 import userRouter from "./routers/userRouter";
 import videoRouter from "./routers/videoRouter";
 import globalRouter from "./routers/globalRouter";
-import routes from "./routes";
 
 const app = express();
 
@@ -44,6 +44,16 @@ app.use(helmet());
 // app.get("/", handleHome); 허용할 수 없음
 
 // app.get("/profile", handleProfile); 허용할 수 없음
+
+// app.use((req, res, next) => {});
+
+// app.use(function (req, res, next) {});
+
+// const localsMiddleware = (req, res, next) => {
+
+// }
+
+app.use(localsMiddleware);
 
 app.use(routes.home, globalRouter);
 app.use(routes.users, userRouter);
