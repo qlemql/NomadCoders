@@ -24,6 +24,7 @@ const app = express();
 // app.use(betweenHome);
 //원하는 만큼 middlewave를 넣을 수 있다.
 
+app.set("view engine", "pug");
 app.use(cookieParser());
 // cookieParser는 cookie를 전달 받아서 사용할 수 있도록 만들어주는 미들웨어
 app.use(bodyParser.json());
