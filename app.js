@@ -30,10 +30,10 @@ app.use(cookieParser());
 app.use(bodyParser.json());
 // bodyParser는 사용자가 웹사이트로 전달하는 정보를 검사하는 미들웨어
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(helmet());
-// application이 더 안전하도록 만듬
 app.use(morgan("dev"));
 // application에서 발생하는 모든 일들을 logging 하는 것
+app.use(helmet());
+// application이 더 안전하도록 만듬
 
 // 아래와 같이 연결을 끊을 수 있다.
 // const middleware = (req, res, next) => {
