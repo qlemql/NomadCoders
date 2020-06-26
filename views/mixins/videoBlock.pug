@@ -1,0 +1,6 @@
+mixin videoBlock(video ={})
+    .videoBlock
+        video.videoBlock__thumbnail(src=video.videoFile, controls=true)
+        //자동재생을 원하면 위 src뒤에 autoplay=true를 추가
+        h4.videoBlock__title=video.title
+        h6.videoBlock__views=video.views
