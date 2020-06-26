@@ -1,0 +1,8 @@
+extends layouts/main
+
+block content
+  .detail
+    p #{des}
+    each detail in genres
+      ul
+        li=detail
