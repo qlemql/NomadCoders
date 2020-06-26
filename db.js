@@ -44,7 +44,7 @@ export const videos = [
     description: "This is something I love",
     views: 24,
     videoFile:
-      "https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4",
+      "https://media.istockphoto.com/videos/gentoo-penguins-video-id1086665726",
     creator: {
       id: 2345,
       name: "Hyun",
