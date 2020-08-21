@@ -3,7 +3,7 @@ const COORDS = "coords";
 
 function getWeather(lat, lng) {
   fetch(
-    `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&appid=${API_KEY}`
+    `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&appid=${API_KEY}&units=metric`
   );
 }
 
@@ -31,11 +31,12 @@ function askForCoords() {
 }
 
 function loadCoords() {
-  const loadedCords = localStorage.getItem(COORDS);
-  if (loadedCords === null) {
+  const loadedCoords = localStorage.getItem(COORDS);
+  if (loadedCoords === null) {
     askForCoords();
   } else {
-    //getWeather
+    const parseCoords = JSON.parse(loadedCoords);
+    getWeather(parseCoords.latitude, parseCoords.longitude);
   }
 }
 
