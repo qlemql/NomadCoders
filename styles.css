@@ -5,8 +5,9 @@ body {
   cursor: pointer;
 }
 h1 {
-  color: #34495e;
+  color: white;
   transition: color 0.5s ease-in-out;
+  font-size: 40px;
 }
 .clicked {
   color: #7f8c8d;
@@ -15,6 +16,14 @@ h1 {
 .form,
 .greetings {
   display: none;
+  color: white;
+  font-size: 25px;
+}
+
+ul,
+span {
+  color: white;
+  font-size: 20px;
 }
 
 .showing {
