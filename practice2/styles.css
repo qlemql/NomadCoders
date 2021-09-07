@@ -1,0 +1,34 @@
+body,
+html {
+  height: 100%;
+}
+
+.B-box {
+  background-color: #1e90ff;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.P-box {
+  background-color: #ff6b81;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.G-box {
+  display: flex;
+  background-color: #d8d8d8;
+  width: 20px;
+  height: 20px;
+}
+
+.G-box:nth-child(2):hover {
+  background-color: red;
+}
