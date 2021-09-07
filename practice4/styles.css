@@ -1,0 +1,100 @@
+body,
+html {
+  height: 100%;
+}
+.box1 {
+  background-color: #76c4c6;
+  width: 50%;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circle {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: #fff;
+  animation: circle 1s ease-in-out infinite;
+}
+
+.circle:before {
+  content: "";
+  position: absolute;
+  background-color: #ffffff;
+  top: 0px;
+  left: -25px;
+  height: 10px;
+  width: 10px;
+  border-radius: 10px;
+}
+
+.circle:after {
+  content: "";
+  position: absolute;
+  background-color: #ffffff;
+  top: 0px;
+  left: 25px;
+  height: 10px;
+  width: 10px;
+  border-radius: 10px;
+}
+
+@keyframes circle {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+.box2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1eac9c;
+  width: 50%;
+  height: 350px;
+}
+.square {
+  position: relative;
+  background-color: #ffffff;
+  margin-left: 10px;
+  width: 10px;
+  height: 30px;
+  animation: square 1s infinite ease-in-out;
+  animation-duration: 1.3s;
+}
+.square:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.square:nth-child(2) {
+  animation-delay: 0.3s;
+}
+.square:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.square:nth-child(4) {
+  animation-delay: 0.5s;
+}
+.square:nth-child(5) {
+  animation-delay: 0.6s;
+}
+@keyframes square {
+  0% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(3);
+  }
+  70% {
+    transform: scaleY(1);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
