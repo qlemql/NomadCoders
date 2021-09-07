@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 class="h1">Random Number Game</h1>
+    <h3 class="nubmer">
+      Grnerate a number between 0 and
+      <span class="var"></span>
+    </h3>
+    <div class="rangeSlider">
+      <input
+        type="range"
+        min="0"
+        max="200"
+        step="1"
+        list="steplist"
+        value="20"
+      />
+      <datalist id="steplist">
+        <option>0</option>
+        <option>50</option>
+        <option>100</option>
+        <option>150</option>
+        <option>200</option>
+      </datalist>
+    </div>
+    <form class="form">
+      <div class="guess">
+        <span>Guess the number :</span>
+        <input type="text" class="rangeInput" min="0" max="200" step="1" />
+        <input type="button" class="btn" value="Play" />
+      </div>
+    </form>
+    <div>
+      <span class="chose"></span>
+    </div>
+    <span class="result"> </span>
+    <div>
+      <img
+        class="img"
+        id="penguin"
+        src="https://img1.daumcdn.net/thumb/R720x0/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fliveboard%2Fshare%2Fd0d9782bd539405fb50a814f01d4d5ef.png"
+      />
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

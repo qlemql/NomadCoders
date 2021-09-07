@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Nanum+Pen+Script&display=swap");
+
+body {
+  background-color: #ffd194;
+}
+
+.h1,
+.nubmer,
+.rangeSlider,
+.form,
+.chose,
+.result {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  font-family: "Dancing Script", cursive;
+  font-size: 30px;
+}
+
+.img {
+  display: block;
+  margin: 0px auto;
+}
